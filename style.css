@@ -1,29 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+p{
+  padding: 5px;
+}
+
+/* Logo Marca */
+.logomarca{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 figcaption {
     display: none;
 }
 
+/* Landing Page - Tela Bem-Vindo */
 .landing_page{
 
     height: 100vh;
     width: 100%;
+    color: #FFFFFF;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
 
     background: linear-gradient(45deg, #6095f8 0%, #cdffff 100%);
     background-size: 400% 400%;
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+/* Animação do Background */
 @keyframes backgroundTransition {
     0% {
       background-position: 0% 50%;
@@ -34,4 +52,50 @@ figcaption {
     100% {
       background-position: 0% 50%;
     }
+}
+
+/* Formulario Cadastro */
+aside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #FFFFFF;
+  color: #6095f8;
+  border-radius: 30px;
+  padding: 25px;
+}
+
+.form_cadastro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+button{
+  width: 250px;
+  height: 35px;
+
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  background-color: #6095f8;
+
+  box-shadow: 2px 5px 10px #cdcdcd;
+  border-radius: 50px;
+  border: 0px solid;
+}
+
+button:hover {
+  scale: 1.1;
+  background-color: linear-gradient(45deg, #6095f8 0%, #cdffff 100%);
+
+}
+
+input{
+  margin: 10px;
 }

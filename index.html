@@ -10,9 +10,57 @@
 <body>
     
     <header>
-        <section class="landing_page"> 
-            <img src="assets/logomarca_text.png" alt="Salun - Nome do aplicativo"> 
-            <p>Para facilitar o dia-a-dia em sala de aula!</p>
+        <section class="landing_page">
+
+            <figure class="logomarca"> 
+                <img src="assets/imgs/logomarca-removebg.png" alt="Salun - Nome do aplicativo">
+                <p>O app para facilitar o dia-a-dia em sala de aula!</p>
+   
+                   <figcaption>Logo do Aplicativo -
+                    Quadrado feito de 4 quadrados brancos onde um há apenas a borda
+                   </figcaption> 
+            </figure>
+
+            <aside> 
+                <p> Comece aqui seu CADASTRO </p>
+
+                <forms class="form_cadastro"> 
+                    <label name="nome">
+                        Nome:
+                        <input type="text" name="nome" id="input_nomeUsuario">
+                    </label>
+
+                    <label name="email">
+                        Email:
+                        <input type="email" name="email" id="input_emailUsuario">
+                    </label>
+
+                    <span>
+                        <label name="tp_usuario"> 
+                            Aluno:
+                            <input type="radio" name="tp_usuario" id="inputRadio_tipoUsuario" value="aluno">
+                        </label>
+                        <label name="tp_usuario">
+                            Professor:
+                            <input type="radio" name="tp_usuario" id="inputRadio_tipoUsuario" value="professor">
+                        </label>
+                    </span>
+
+                    <label name="senha_usuario">
+                        Senha:
+                        <input type="password" name="senha_usuario" id="input_senhaUsuario">
+                    </label>
+
+                    <button class="btn_cadastro">CADASTRO</button>
+                </forms>
+
+                <p style="white-space: pre-line;">Já tem uma conta? 
+                Faça o LOGIN aqui <p>
+                <button class="btn_login">LOGIN</button>
+
+
+            </aside>
+
         </section> 
     </header>
 
