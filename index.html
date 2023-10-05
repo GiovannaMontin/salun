@@ -22,42 +22,15 @@
             </figure>
 
             <aside> 
-                <p> Comece aqui seu CADASTRO </p>
+                <h2>Bem-vinde ao SALUN!</h2>
 
-                <forms class="form_cadastro"> 
-                    <label name="nome">
-                        Nome:
-                        <input type="text" name="nome" id="input_nomeUsuario">
-                    </label>
+                <p> 
+                    Precisando de um apoio? 
+                    Com um clique a gente se conecta! 
+                </p>
 
-                    <label name="email">
-                        Email:
-                        <input type="email" name="email" id="input_emailUsuario">
-                    </label>
-
-                    <span>
-                        <label name="tp_usuario"> 
-                            Aluno:
-                            <input type="radio" name="tp_usuario" id="inputRadio_tipoUsuario" value="aluno">
-                        </label>
-                        <label name="tp_usuario">
-                            Professor:
-                            <input type="radio" name="tp_usuario" id="inputRadio_tipoUsuario" value="professor">
-                        </label>
-                    </span>
-
-                    <label name="senha_usuario">
-                        Senha:
-                        <input type="password" name="senha_usuario" id="input_senhaUsuario">
-                    </label>
-
-                    <button class="btn_cadastro">CADASTRO</button>
-                </forms>
-
-                <p style="white-space: pre-line;">Já tem uma conta? 
-                Faça o LOGIN aqui <p>
+                <button class="btn_cadastro">CADASTRO</button>
                 <button class="btn_login">LOGIN</button>
-
 
             </aside>
 
@@ -66,7 +39,94 @@
 
     <main>
 
+        <!-- 
+            Próximo passo:
+                Adicionar manipulação DOM - Ao clicar no botão CADASTRAR (no aside do header) vai aparecer apenas a section form_cadastro,
+                 o mesmo vale se o usuario clicar em LOGIN.
+            
+                Adicionar responsividade
+
+                Melhorar Design
+
+        -->
+       <div class="container_forms">
+
+            <section class="section_form" id="form_cadastro">
+
+                <forms class="form_cadastro"> 
+                    <p> Comece aqui seu CADASTRO </p>
+
+                    <label name="nome">
+                        Nome:
+                        <input type="text" name="nome" class="input_nomeUsuario">
+                    </label>
         
+                    <label name="email">
+                        Email:
+                        <input type="email" name="email" class="input_emailUsuario">
+                    </label>
+        
+                    <span>
+                        <label name="tp_usuario"> 
+                            Aluno:
+                            <input type="radio" name="tp_usuario" class="inputRadio_tipoUsuario" value="aluno">
+                        </label>
+                        <label name="tp_usuario">
+                            Professor:
+                            <input type="radio" name="tp_usuario" class="inputRadio_tipoUsuario" value="professor">
+                        </label>
+                    </span>
+        
+                    <label name="senha_usuario">
+                        Senha:
+                        <input type="password" name="senha_usuario" class="input_senhaUsuario">
+                    </label>
+        
+                    <input class="input_cadastro" type="submit" value="CADASTRO">   
+                </forms>
+        
+                <p style="white-space: pre-line;">Já tem uma conta? 
+                 Faça o LOGIN aqui <p>
+                <button class="btn_login">LOGIN</button>    
+            
+            </section>
+
+            <section class="section_form" id="form_login">
+
+                <forms class="form_login"> 
+                    <p> Faça seu LOGIN aqui</p>
+
+                    <label name="email">
+                        Email:
+                        <input type="email" name="email" class="input_emailUsuario">
+                    </label>
+        
+                    <label name="senha_usuario">
+                        Senha:
+                        <input type="password" name="senha_usuario" class="input_senhaUsuario">
+                    </label>
+        
+                    <span>
+                        <label name="tp_usuario"> 
+                            Aluno:
+                            <input type="radio" name="tp_usuario" class="inputRadio_tipoUsuario" value="aluno">
+                        </label>
+                        <label name="tp_usuario">
+                            Professor:
+                            <input type="radio" name="tp_usuario" class="inputRadio_tipoUsuario" value="professor">
+                        </label>
+                    </span>
+
+                    <input class="input_login" type="submit" value="LOGIN">   
+                </forms>
+        
+                <p style="white-space: pre-line;">Não tem uma conta? 
+                    Faça o seu CADASTRO aqui <p>
+                <button class="btn_cadastro">CADASTRO</button>
+            
+            </section>
+
+       </div>
 
     </main>
 
